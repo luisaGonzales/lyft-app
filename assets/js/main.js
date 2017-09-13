@@ -16,4 +16,4 @@ const app = {
     }
 }
 
-$(document).ready(app.inicio);
+$(document).ready(app.inicio);  

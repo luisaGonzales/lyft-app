@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline-color:red;
+    outline-style: solid;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Sección de Inicio */
+#inicio{
+    background-image: url(../img/fondo.gif);
+    background-size: cover;
+    height: 670px;
+}
+
+#inicio .logo{
+    width: 30%;
+    margin-top: 5%; 
+}
+
+#inicio a{
+    color: white;
+    font-size: 140%;
+    padding: inherit;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10% 25%;
+    border-radius: 15px;  
+    font-weight: bold;
+}
+
+#inicio #btnLogin{
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+}
+
+#inicio #btnSignup{
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+}
+
+#inicio #signUp{
+    background: -webkit-linear-gradient(90deg, rgb(35, 24, 87), rgba(255, 0, 191, 0.80));
+    background: linear-gradient(90deg, rgb(35, 24, 87), rgba(255, 0, 191, 0.80));
+    border: 2px solid white;
+}   
+
+#inicio #signUp:hover{
+    font-weight: bold;
+}
+

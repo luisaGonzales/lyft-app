@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     /* outline-color:red;
@@ -7,50 +7,53 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 /* Sección de Inicio */
-#inicio{
+
+#inicio {
     background-image: url(../img/fondo.gif);
     background-size: cover;
     height: 670px;
 }
 
-#inicio .logo{
+#inicio .logo {
     width: 30%;
-    margin-top: 5%; 
+    margin-top: 5%;
 }
 
-#inicio a{
+#inicio a {
     color: white;
     font-size: 140%;
     padding: inherit;
     text-decoration: none;
     border: 2px solid white;
     padding: 10% 25%;
-    border-radius: 15px;  
+    border-radius: 15px;
     font-weight: bold;
 }
 
-#inicio #btnLogin{
+#inicio #btnLogin {
     position: absolute;
     bottom: 8%;
     left: 0;
 }
 
-#inicio #btnSignup{
+#inicio #btnSignup {
     position: absolute;
     bottom: 8%;
     right: 0;
 }
 
-#inicio #signUp{
+#inicio #signUp {
     background: -webkit-linear-gradient(90deg, rgb(35, 24, 87), rgba(255, 0, 191, 0.80));
     background: linear-gradient(90deg, rgb(35, 24, 87), rgba(255, 0, 191, 0.80));
     border: 2px solid white;
-}   
+}
 
-#inicio #signUp:hover{
+#inicio #signUp:hover {
     font-weight: bold;
 }
+
 
 /* Sección Registro */
 
@@ -58,17 +61,17 @@
     height: 550px;
 }
 
-.btnVolver{
+.btnVolver {
     position: absolute;
     top: 2%;
     left: 6%;
 }
 
-.btnVolver a{
-	color: black;
+.btnVolver a {
+    color: black;
 }
 
-.btnVolver a:hover{
+.btnVolver a:hover {
     font-size: 0.8em;
 }
 
@@ -78,20 +81,22 @@
     padding: 5px 0px !important;
 }
 
-#registro #inputTelefono{
-        border: 1px solid silver;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 10px 0;
+#inputTelefono,
+#inputNombre,
+#inputEmail {
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
 }
 
-#registro #inputTelefono input{
+#registro #inputTelefono input {
     border: none;
     outline: none;
     color: #2b2b2b2b;
 }
 
-#registro #siguiente{
+#registro #siguiente {
     position: absolute;
     bottom: 4%;
     font-family: 'Raleway', sans-serif;
@@ -106,16 +111,69 @@
     border-radius: 2px;
 }
 
-.btn-info:hover{
+.btn-info:hover {
     background-color: #FF00BF;
     color: white;
 }
 
-.btn-info.focus, .btn-info:focus{
+.btn-info.focus,
+.btn-info:focus {
     background-color: #FF00BF;
 }
-.row{
+
+.row {
     margin-right: 0;
     margin-left: 0;
 }
 
+
+/* Sección Registro de Datos */
+
+.registroDatos input {
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.registroDatos {
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#nombre,
+#apellido,
+#email {
+    border: none !important;
+    outline: none !important;
+    color: #2b2b2b2b;
+    width: 90%;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+#registroDatos .siguiente{
+    background-color: #FF00BF;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#registroDatos .siguiente a{
+    color: white;
+    font-size: 140%;
+    text-decoration: none;
+    border-radius: 2%;
+    font-weight: bold;
+    text-align: center;
+    padding: inherit;
+}
+
+#registroDatos .checkbox{
+    padding-bottom: 80%;
+}

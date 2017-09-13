@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    outline-color:red;
-    outline-style: solid;
+    /* outline-color:red;
+    outline-style: solid; */
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
@@ -50,5 +50,72 @@
 
 #inicio #signUp:hover{
     font-weight: bold;
+}
+
+/* Sección Registro */
+
+#registro {
+    height: 550px;
+}
+
+.btnVolver{
+    position: absolute;
+    top: 2%;
+    left: 6%;
+}
+
+.btnVolver a{
+	color: black;
+}
+
+.btnVolver a:hover{
+    font-size: 0.8em;
+}
+
+/* Menu */
+
+#registro .dropdown-menu>li>a {
+    padding: 5px 0px !important;
+}
+
+#registro #inputTelefono{
+        border: 1px solid silver;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+}
+
+#registro #inputTelefono input{
+    border: none;
+    outline: none;
+    color: #2b2b2b2b;
+}
+
+#registro #siguiente{
+    position: absolute;
+    bottom: 4%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-info {
+    background-color: #FF00BF;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.btn-info:hover{
+    background-color: #FF00BF;
+    color: white;
+}
+
+.btn-info.focus, .btn-info:focus{
+    background-color: #FF00BF;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
 }
 

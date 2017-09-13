@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lyft</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,700i,800,800i,900" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section id="registro">
+        <header>
+            <div class="btnVolver">
+                <a href="index.html"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <h1 class="text-center">Sign Up</h1>
+            <h4 class="text-center">Join Now for free ride credit.</h4>
+            <hr>
+        </header>
+        <div class="container text-center">
+            <div class="row" id="inputTelefono">
+                <div class="col-sm-3 col-xs-3 col-md-3">
+                    <div class="dropdown">
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/img/img0.png">
+                            <span class="caret"></span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a id="+51" href="#"><img src="assets/img/img0.png"> Perú</a></li>
+                            <li><a id="+56" href="#"><img src="assets/img/img1.png"> Chile</a></li>
+                            <li><a id="+55" href="#"><img src="assets/img/img2.png"> México</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-2 col-md-2">
+                    <input type="text" id="postal" value="+51" readonly>
+                </div>
+                <div class="col-sm-7 col-xs-7 col-md-7">
+                    <input type="tel" pattern=".{9,}" id="celular" placeholder="943572159" requerid>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <h5>We'll send a text to verify your phone</h5>
+            </div>
+        </div>
+    </section>
+    <section id="siguiente">
+        <!-- Modal -->
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-12 col-sm-12 ">
+                <!-- Botón que activa el modal-->
+                <button id="mostrarPin" type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">NEXT</button>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title"><strong>CLAVE DE ACCESO<strong></h4>
+                            </div>
+                            <div class="modal-body">
+                                <p id="pin"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <a href="registroDatos.html" class="btn btn-default">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/1625bb79ec.js"></script>
+    <!-- Javascript -->
+    <script src="assets/js/banderas.js"></script>
+    <script src="assets/js/pin.js"></script>
+</body>
+
+</html>

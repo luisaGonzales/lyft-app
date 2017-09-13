@@ -11,7 +11,6 @@ const app = {
     directionsService: undefined,
     detailsPosition: undefined,
     marker: undefined,
-    price_stimated: undefined,
 
     //Método que inicializa todo, dibujando un mapa 
     init: function () {
@@ -30,14 +29,10 @@ const app = {
         app.marker = app.createMarker(app.map);
         app.detailsPosition = new google.maps.InfoWindow();
         app.searchPosition();
-        // app.setup();
-        // app.sourceOrigin = document.getElementById('origin');
-        // app.createListener(app.sourceOrigin);
         app.sourceDestination = document.getElementById('destination');
         app.createListener(app.sourceDestination);
         app.directionsService = new google.maps.DirectionsService;
         app.directionsDisplay = new google.maps.DirectionsRenderer;
-        // app.directionsDisplay.setMap(app.map);
         app.setup();
     },
 
@@ -85,8 +80,7 @@ const app = {
     setup: function () {
         // Dibuja la ruta
         document.getElementById("show-road").addEventListener("click", function () {
-            app.showRoad(app.directionsService, app.directionsDisplay);
-            alert(app.price_stimated);
+            app.showRoad(app.directionsService, app.directionsDisplay)
         });
         app.directionsDisplay.setMap(app.map);
     },
@@ -119,13 +113,13 @@ const app = {
             lng: app.longitude
         });
 
-        app.detailsPosition.setContent('<div><strong>Mi ubicación actual</strong><br>');
+        app.detailsPosition.setContent('<div><strong>Lyft is not yet avaible here.</strong><br>');
         app.detailsPosition.open(app.map, app.marker);
     },
     // Método que crea el marcador
     createMarker: function (map) {
         let icon = {
-            url: "http://icons.iconarchive.com/icons/danieledesantis/playstation-flat/64/playstation-circle-dark-icon.png",
+            url: "http://icons.iconarchive.com/icons/icons-land/vista-map-markers/256/Map-Marker-Push-Pin-2-Pink-icon.png",
             size: new google.maps.Size(71, 71),
             origin: new google.maps.Point(0, 0),
             anchor: new google.maps.Point(17, 34),
@@ -152,7 +146,9 @@ const app = {
                 function (response, status) {
                     if (status === "OK") {
                         directionsDisplay.setDirections(response);
-                        app.price_stimated = response.routes[0].overview_path.length / 10  + "USD";
+                        let price_stimated = response.routes[0].overview_path.length / 10  + "USD";
+                        alert("El precio del viaje es" + price_stimated);
+                        
                     } else {
                         app.fnErrorRoute();
                     }
@@ -163,11 +159,10 @@ const app = {
     fnErrorRoute: function () {
         alert("No ingresaste un origen y un destino validos");
     }
-}
+};
 
 function initMap() {
     app.init();
 }
 
 $(document).ready(app.init);
-//sipi

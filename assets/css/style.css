@@ -75,6 +75,7 @@
     font-size: 0.8em;
 }
 
+
 /* Menu */
 
 #registro .dropdown-menu>li>a {
@@ -153,7 +154,7 @@
     font-size: 1.2em;
 }
 
-#registroDatos .siguiente{
+#registroDatos .siguiente {
     background-color: #FF00BF;
     color: white;
     border: none;
@@ -164,7 +165,7 @@
     margin: 0 auto;
 }
 
-#registroDatos .siguiente a{
+#registroDatos .siguiente a {
     color: white;
     font-size: 140%;
     text-decoration: none;
@@ -174,6 +175,6 @@
     padding: inherit;
 }
 
-#registroDatos .checkbox{
+#registroDatos .checkbox {
     padding-bottom: 80%;
 }

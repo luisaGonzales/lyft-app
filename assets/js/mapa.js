@@ -11,6 +11,7 @@ const app = {
     directionsService: undefined,
     detailsPosition: undefined,
     marker: undefined,
+    price_stimated: undefined,
 
     //Método que inicializa todo, dibujando un mapa 
     init: function () {
@@ -84,7 +85,8 @@ const app = {
     setup: function () {
         // Dibuja la ruta
         document.getElementById("show-road").addEventListener("click", function () {
-            app.showRoad(app.directionsService, app.directionsDisplay)
+            app.showRoad(app.directionsService, app.directionsDisplay);
+            alert(app.price_stimated);
         });
         app.directionsDisplay.setMap(app.map);
     },
@@ -150,6 +152,7 @@ const app = {
                 function (response, status) {
                     if (status === "OK") {
                         directionsDisplay.setDirections(response);
+                        app.price_stimated = response.routes[0].overview_path.length / 10  + "USD";
                     } else {
                         app.fnErrorRoute();
                     }

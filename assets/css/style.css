@@ -178,3 +178,17 @@
 #registroDatos .checkbox {
     padding-bottom: 80%;
 }
+
+.btn-primary{
+    background-color: inherit !important; 
+    border-color: inherit !important;
+}
+
+.btn.disabled{
+    opacity: 1 !important;
+}
+
+#registroDatos #btnSiguiente{
+    padding: 12px;
+    border: none;
+}
